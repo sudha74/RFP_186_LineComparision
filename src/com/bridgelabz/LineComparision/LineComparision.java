@@ -32,12 +32,13 @@ public class LineComparision {
 //        }else {
 //            System.out.println("Lines are not equal");
 
-        boolean result = length1.equals(length2);
-        if (result == true) {
+        int result = length1.compareTo(length2);
+        if (result == 0) {
             System.out.println("Lines are equal");
+        } else if (result > 0) {
+            System.out.println("Line 1 is greater than Line 2");
         } else {
-            System.out.println("Lines are not rqual");
+            System.out.println("Line 2 greater than Line1");
         }
-
     }
 }
